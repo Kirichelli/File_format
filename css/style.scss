@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #6A9CFF;
+}
+
+.wrapper{
+    width: 450px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 7px;
+
+    input, textarea, select, button{
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    textarea{
+        height: 270px;
+        resize: none;
+        border: 1px solid #ccc;
+        padding: 8px 10px;
+    }
+    .file-options{
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: space-between;
+
+        .option{
+            width: calc(100%/2 - 8px);
+            .select-menu,input{
+                height: 50px;
+                border: 1px solid #ccc;
+                margin-top: 6px;
+                border-radius: 5px;
+                padding: 0 15px;
+            }
+
+            .select-menu select{
+                background: none;
+                height: 50px;
+            }
+        }
+    }
+
+    .save-btn{
+        margin-top: 20px;
+        padding: 16px 0;
+        cursor: pointer;
+        background: #6A9CFF;
+        color: #fff;
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    .try{
+        
+        margin-top: 20px;
+        padding: 16px 0;
+        cursor: pointer;
+        background: #6A9CFF;
+        color: #fff;
+    }
+
+    .save-btn,
+    .try:hover{
+        background: #093999;
+    }
+
+    textarea:valid ~ .save-btn{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    
+}

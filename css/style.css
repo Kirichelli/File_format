@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #6A9CFF;
+}
+
+.wrapper {
+  width: 450px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 7px;
+}
+
+.wrapper input, .wrapper textarea, .wrapper select, .wrapper button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.wrapper textarea {
+  height: 270px;
+  resize: none;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+}
+
+.wrapper .file-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .file-options .option {
+  width: calc(100%/2 - 8px);
+}
+
+.wrapper .file-options .option .select-menu, .wrapper .file-options .option input {
+  height: 50px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+.wrapper .file-options .option .select-menu select {
+  background: none;
+  height: 50px;
+}
+
+.wrapper .save-btn {
+  margin-top: 20px;
+  padding: 16px 0;
+  cursor: pointer;
+  background: #6A9CFF;
+  color: #fff;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.wrapper .try {
+  margin-top: 20px;
+  padding: 16px 0;
+  cursor: pointer;
+  background: #6A9CFF;
+  color: #fff;
+}
+
+.wrapper .save-btn,
+.wrapper .try:hover {
+  background: #093999;
+}
+
+.wrapper textarea:valid ~ .save-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
